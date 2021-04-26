@@ -3262,6 +3262,11 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
+functional-ts-primitives@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/functional-ts-primitives/-/functional-ts-primitives-1.1.0.tgz#601e910d8687c57bba21e0e881e6fb0fb1c31eb9"
+  integrity sha512-cco4/yD0JZzDpiRvZT19FzsJ5tGOyXXT1i/6djOZ7SXULyZ0wN2l3+cc1/2sAhA/Uu84W5BasHcFq0fp1krI+w==
+
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
