@@ -1,10 +1,12 @@
 import type { InferGetServerSidePropsType } from "next";
 import { Center } from "@chakra-ui/react";
 
+import { getApiEndpoint } from "../constants/endpoints";
 import type { Resume } from "../models/resume";
 
 export const getServerSideProps = async () => {
-    const response = await fetch("http://localhost:5000/resume");
+    const endpoint = `${getApiEndpoint()}/resume`;
+    const response = await fetch(endpoint, { mode: "cors" });
     const resume: Resume = await response.json();
 
     return {
@@ -17,7 +19,12 @@ export const getServerSideProps = async () => {
 function FetchPage({
     resume,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
-    return <Center>{resume.intro}</Center>;
+    return (
+        <>
+            <Center>{resume.intro}</Center>
+            <Center>{resume.workExperience[0].companyName}</Center>
+        </>
+    );
 }
 
 export default FetchPage;
